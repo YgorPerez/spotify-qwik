@@ -42,7 +42,7 @@ dependencies:
 devDependencies:
   '@builder.io/qwik':
     specifier: ^1.2.6
-    version: 1.2.6(undici@5.22.1)
+    version: 1.2.6(undici@5.26.2)
   '@builder.io/qwik-city':
     specifier: ^1.2.6
     version: 1.2.6
@@ -80,8 +80,8 @@ devDependencies:
     specifier: 5.1.6
     version: 5.1.6
   undici:
-    specifier: 5.22.1
-    version: 5.22.1
+    specifier: 5.26.2
+    version: 5.26.2
   vite:
     specifier: 4.4.0
     version: 4.4.0(@types/node@20.4.0)
@@ -112,7 +112,7 @@ packages:
       - supports-color
     dev: true
 
-  /@builder.io/qwik@1.2.6(undici@5.22.1):
+  /@builder.io/qwik@1.2.6(undici@5.26.2):
     resolution: {integrity: sha512-Cm1sLAimML55I5T1RI80R1lLgI4cnSeQt5obQtcMKa8wMmf2/luEyQaEkeN2fV3sp/gaVXCfAuKaddXK6ONdww==}
     engines: {node: '>=16.8.0 <18.0.0 || >=18.11'}
     hasBin: true
@@ -120,7 +120,7 @@ packages:
       undici: ^5.14.0
     dependencies:
       csstype: 3.1.2
-      undici: 5.22.1
+      undici: 5.26.2
 
   /@effect/data@0.16.3:
     resolution: {integrity: sha512-RxRN3Vm8YPys0GjH/yjl2Z57kGCwJGjY6omgcDbeXhLVd+SUaVWbM6hJysKvb/gD9cuN1XwhXUnJ0shVErDelg==}
@@ -395,6 +395,10 @@ packages:
     resolution: {integrity: sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fastify/busboy@2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
 
   /@humanwhocodes/config-array@0.11.10:
     resolution: {integrity: sha512-KVVjQmNUepDVGXNuoRRdmmEjruj0KfiGSbS8LVc12LMsWDQzRXJ0qdhN8L8uUigKpfEHRhlaQFY0ib1tnUbNeQ==}
@@ -716,7 +720,7 @@ packages:
     peerDependencies:
       '@builder.io/qwik': '*'
     dependencies:
-      '@builder.io/qwik': 1.2.6(undici@5.22.1)
+      '@builder.io/qwik': 1.2.6(undici@5.26.2)
     dev: false
 
   /@upstash/core-analytics@0.0.6:
@@ -926,12 +930,6 @@ packages:
       base64-js: 1.5.1
       ieee754: 1.2.1
     dev: true
-
-  /busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
-    dependencies:
-      streamsearch: 1.1.0
 
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
@@ -3065,10 +3063,6 @@ packages:
     resolution: {integrity: sha512-23vZi/O4CvoaIEIAi89ZVbR0PEcHscE2onufH+apK9s7unPqAoJLeeEZQODDCV8tR4Br3MHPX5x7fRjIsD/qMw==}
     dev: false
 
-  /streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
-
   /streamx@2.15.0:
     resolution: {integrity: sha512-HcxY6ncGjjklGs1xsP1aR71INYcsXFJet5CU1CHqihQ2J5nOsbd4OjgjHO42w/4QNv9gZb3BueV+Vxok5pLEXg==}
     dependencies:
@@ -3389,11 +3383,11 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici@5.22.1:
-    resolution: {integrity: sha512-Ji2IJhFXZY0x/0tVBXeQwgPlLWw13GVzpsWPQ3rV50IFMMof2I55PZZxtm4P6iNq+L5znYN9nSTAq0ZyE6lSJw==}
+  /undici@5.26.2:
+    resolution: {integrity: sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==}
     engines: {node: '>=14.0'}
     dependencies:
-      busboy: 1.6.0
+      '@fastify/busboy': 2.0.0
 
   /unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
